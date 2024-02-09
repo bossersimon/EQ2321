@@ -12,6 +12,6 @@
 > High pitch region: 5 peaks in 6ms -> 833 Hz. Low pitch region: 10 peaks in 40ms -> 250 Hz (Maybe it's supposed to be ~125 Hz, which is more typical for a male).
 3. 
 > Plot
-4. $$ \sum_{m=1}^(N-1) x_m e^(-j6 pi m/n) $$
+4. $$X[3] = \sum_{m=1}^(N-1) x_m e^(-j6 pi m/n)$$
 
 
