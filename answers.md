@@ -15,4 +15,4 @@ With 8 kHz sampling rate and $N = 256$ sampling points, we have a frequency reso
 
 6. Keeping the frame length short is important for computational efficiency, but if it's too low we might not be able to find the correct fundamental frequency. In this case, the fundamental lies in the frequency bin of $31.25$ Hz around $93.75$ Hz ($97.75 \pm 15.625$). I think this is a reasonable frame length. 
 7. The resulting spectrum is pointier when using a boxcar. The average magnitude of the new spectrum is also larger and it has no negative values (in log scale). This makes sense because the Hanning window tapers the edges of the signal, removing energy.
-8. 
+  9. $c(3) = (x \ast y)(3-N+1) = \sum_{l=0}^{|| x ||-1} x_l {y^{\ast}}_{l-3+N-1}$
