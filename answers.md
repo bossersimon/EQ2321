@@ -21,12 +21,19 @@ With 8 kHz sampling rate and $N = 256$ sampling points, we have a frequency reso
 7. The resulting spectrum is pointier when using a boxcar. The average magnitude of the new spectrum is also larger and it has no negative values (in log scale). This is reasonable because the Hanning window tapers the edges of the signal, removing energy.
   9. $$c(3) = (x \ast y)(3-N+1) = \sum_{l=0}^{|| x ||-1} x_l y_{l-3+N-1}^{\ast}$$
   signal.freqz computes the frequency response of the filter. Parameters are:
+
   numerator b = 1
+
   denominator a = 1 (default)
+
   N = 1024 (computed at 1024 frequencies)
+
   whole = True (computed from 0 to Nyquist frequency) 
+
   fs = 44100
+
   w = frequency points
+
   h2 = response
 
   Multiplication by $e$ simply shifts the envelope vertically. It seems to follow the magnitude of the signal spectrum better this way.
