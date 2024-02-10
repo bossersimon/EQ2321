@@ -48,7 +48,7 @@ With 8 kHz sampling rate and $N = 256$ sampling points, we have a frequency reso
 ## Phonemes and Allophones
 1.
 2.
-3. A diphthong is two vowels after each other. 
+3. A diphthong is two vowels after each other. For example /eɪ/ as in day. 
 4. 44
 5. A phone is any distinct unit of speech sound/ a realization of speech sound. An allophone is a variation or a different pronunciation of a phoneme. It seems like it's hard to determine exactly how many allophones there are because there are so many variations of sounds (of the same phonemes).
 
