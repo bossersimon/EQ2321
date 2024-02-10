@@ -13,7 +13,7 @@
 
 4. $$X[3] = \sum_{m=1}^{N-1} x_m e^{{-j6 \pi m}/n}$$
 
-With 8 kHz sampling rate and $N = 256$ sampling points, we have a frequency resolution of $8$ kHz $$/N = 31.25$$ Hz. The frequency at $X[3]$ is then $3*31.25 = 93.75$ Hz.
+With 8 kHz sampling rate and $N = 256$ sampling points, we have a frequency resolution of $8$ kHz $/N = 31.25$ Hz. The frequency at $X[3]$ is then $3 \cdot 31.25 = 93.75$ Hz.
 
 5. I find the index of the maximum of the DFT to be $7$. So the fundamental is $7$ times the resolution $= 218.75$ Hz. This is within the range of voiced speech so it seems reasonable.
 
