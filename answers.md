@@ -14,5 +14,33 @@ With 8 kHz sampling rate and $N = 256$ sampling points, we have a frequency reso
 5. I find the index of the maximum of the DFT to be $7$. So the fundamental is $7$ times the resolution $= 218.75$ Hz. This is within the range of voiced speech so it seems reasonable.
 
 6. Keeping the frame length short is important for computational efficiency, but if it's too low we might not be able to find the correct fundamental frequency. In this case, the fundamental lies in the frequency bin of $31.25$ Hz around $93.75$ Hz ($97.75 \pm 15.625$). I think this is a reasonable frame length. 
-7. The resulting spectrum is pointier when using a boxcar. The average magnitude of the new spectrum is also larger and it has no negative values (in log scale). This makes sense because the Hanning window tapers the edges of the signal, removing energy.
+7. The resulting spectrum is pointier when using a boxcar. The average magnitude of the new spectrum is also larger and it has no negative values (in log scale). This is reasonable because the Hanning window tapers the edges of the signal, removing energy.
   9. $$c(3) = (x \ast y)(3-N+1) = \sum_{l=0}^{|| x ||-1} x_l y_{l-3+N-1}^{\ast}$$
+  signal.freqz computes the frequency response of the filter. Parameters are:
+  numerator b = 1
+  denominator a = 1 (default)
+  N = 1024 (computed at 1024 frequencies)
+  whole = True (computed from 0 to Nyquist frequency) 
+  fs = 44100
+  w = frequency points
+  h2 = response
+
+  Multiplication by $e$ simply shifts the envelope vertically. It seems to follow the magnitude of the signal spectrum better this way.
+
+  10. ? 
+  11. ?
+
+## Formants
+ 
+2.
+
+## Phonemes and Allophones
+1.
+2.
+3. A diphthong is two vowels after each other. 
+4. 44
+5. A phone is any distinct unit of speech sound/ a realization of speech sound. An allophone is a variation or a different pronunciation of a phoneme. It seems like it's hard to determine exactly how many allophones there are because there are so many variations of sounds (of the same phonemes).
+
+## The Spectrogram
+
+## Vocoder
