@@ -38,8 +38,8 @@ With 8 kHz sampling rate and $N = 256$ sampling points, we have a frequency reso
 
   Multiplication by $e$ simply shifts the envelope vertically. It seems to follow the magnitude of the signal spectrum better this way.
 
-  10. ? 
-  11. ?
+  10. I recommend an order of 8 (or between 8 and 16) which is frequently used in the book (p. 114). Not sure why exactly this range of orders is chosen, but perhaps it is based on empirical studies.
+  11. 
 
 ## Formants
  
