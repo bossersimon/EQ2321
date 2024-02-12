@@ -42,8 +42,9 @@ With 8 kHz sampling rate and $N = 256$ sampling points, we have a frequency reso
   11. 
 
 ## Formants
- 
-2.
+  1. Looking at the voiced envelope: f1 ~ 730 Hz, f2 ~ 1330 Hz, f3 ~2450 Hz
+  These correspond to the vowels 'aa', 'er' and 'ah', respectively Additionally, there is a formant at f4 = 3150 Hz
+  
 
 ## Phonemes and Allophones
 1.
